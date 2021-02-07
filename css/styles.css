@@ -1,0 +1,171 @@
+html {
+  height: 100%;
+}
+
+body{
+  height: 98%;
+  background-color: hsl(204, 43%, 93%);
+  font-family: 'Karla', sans-serif;
+}
+
+button {
+	background-color:hsl(71, 73%, 54%);
+	border-radius:8px;
+	border:1px solid #18ab29;
+  width: 80%;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:17px;
+	padding:16px 47px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px grey;
+
+}
+button:hover {
+	background-color:#5cbf2a;
+}
+button:active {
+	position:relative;
+	top:1px;
+}
+
+
+.bigger {
+  font-size: 2rem;
+  font-weight: 700;
+  padding-right: 5%;
+}
+
+#ad-box {
+  position: absolute;
+  height: 70%;
+  width: 55%;
+  border-radius: 15px;
+  left: 24%;
+  top: 20%;
+  overflow: hidden;
+  box-shadow: 5px 5px 10px grey;
+}
+
+#top-half {
+  background-color: white;
+  height: 50%;
+  border-radius: 15px 15px 0 0;
+
+}
+
+#top-text{
+  padding: 5%;
+}
+
+#top-text h2{
+  color: hsl(179, 62%, 43%);
+  font-weight: 700;
+}
+
+#top-text h3 {
+  color: hsl(71, 73%, 54%);
+}
+
+#top-text p {
+  color: hsl(218, 22%, 67%);
+}
+
+#bottom-half {
+  width: 100%;
+  height: 50%;
+}
+
+#bottom-half-left {
+  position: absolute;
+  background-color: hsl(179, 62%, 43%);
+  color: #f4f9f9;
+  height: 50%;
+  width: 50%;
+  padding-left: 5%;
+  border-radius: 0 0 0 15px;
+}
+
+#bottom-text-left{
+  padding: 5%;
+}
+#price{
+  padding-left: 3%;
+}
+
+#bottom-half-right {
+  position: absolute;
+  background-color: hsl(179, 62%, 50%);
+  height: 50%;
+  width: 50%;
+  right: 0;
+  border-radius: 0 0 15px 0;
+}
+
+#bottom-text-right {
+  padding: 5%;
+  color: white;
+}
+
+#bottom-text-right p {
+  margin: 1%;
+  color: hsl(204, 43%, 93%);
+}
+
+@media (max-width: 600px) {
+
+  button{
+    width: 50%;
+  }
+
+  #ad-box{
+    height: 90%;
+    width: 70%;
+    left: 15%;
+    right: 10%;
+    top:5%;
+  }
+
+  #top-half {
+  height: 33.33%;
+  }
+
+  #top-text h3, h2{
+    text-align: center;
+    margin-top: 1px;
+  }
+
+  #top-text p{
+    padding: 0;
+    margin: 0;
+  }
+
+  #bottom-half{
+    position: relative;
+    height: 100%;
+  }
+
+  #bottom-half-left{
+    width: 100%;
+    height: 35%;
+    border-radius: 0;
+    text-align: center;
+    padding: 0;
+  }
+
+  #bottom-half-right{
+    height: 32%;
+    width: 100%;
+    top:34.9%;
+    text-align: center;
+  }
+
+  #bottom-text-right h3{
+    margin: 1px 2px 8px;
+  }
+
+  #bottom-text-right p{
+    margin: 1px;
+  }
+}
